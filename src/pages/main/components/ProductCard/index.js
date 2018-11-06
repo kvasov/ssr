@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import Image from 'core/components/Image';
-import TextBox from 'core/components/TextBox';
-import Price from 'core/components/Price';
+import Image from '../../../../core/components/Image';
+import TextBox from '../../../../core/components/TextBox';
+import Price from '../../../../core/components/Price';
 
 import './style.scss';
 
