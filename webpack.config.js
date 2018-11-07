@@ -30,10 +30,7 @@ module.exports = {
   },
   resolve: {
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
-    extensions: ['*', '.js', '.jsx'],
-    alias: {
-      '~': process.cwd()
-    }
+    extensions: ['*', '.js', '.jsx']
   },
   output: {
     path: PATHS.dist,

@@ -1,12 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import './styles/reset.scss';
 
 import Start from './pages/main/index';
 
-function Index() {
+function App() {
   return <Start />;
 }
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+export default App;
