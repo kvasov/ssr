@@ -3,8 +3,15 @@ const express = require('express');
 require('@babel/register');
 require('@babel/polyfill');
 
-const render = require('./render').default;
+require('app-module-path').addPath(__dirname + '/src');
 
+function noop() {
+  return null;
+}
+
+require.extensions['.scss'] = noop;
+
+const render = require('./render').default;
 const app = express();
 
 app.get('/', (req, res) => {
